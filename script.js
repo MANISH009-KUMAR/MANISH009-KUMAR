@@ -1,17 +1,19 @@
-window.addEventListener("scroll", () => {
-  document.querySelectorAll("section").forEach((sec) => {
-    const rect = sec.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      sec.style.opacity = 1;
-      sec.style.transform = "translateY(0)";
-    }
-  });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("section").forEach((sec) => {
-    sec.style.opacity = 0;
-    sec.style.transform = "translateY(50px)";
-    sec.style.transition = "all 0.6s ease-out";
-  });
+const toggleBtn = document.getElementById('mode-toggle');
+const body = document.body;
+
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-mode');
+  toggleBtn.textContent = '☀️';
+}
+
+toggleBtn.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  if (body.classList.contains('dark-mode')) {
+    localStorage.setItem('theme', 'dark');
+    toggleBtn.textContent = '☀️';
+  } else {
+    localStorage.setItem('theme', 'light');
+    toggleBtn.textContent = '🌙';
+  }
 });

@@ -1,76 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manish | Web Developer</title>
+  <title>Manish Kumar | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
-    <nav>
-      <h1>Manish</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
+    <nav class="navbar">
+      <div class="logo">Manish Kumar</div>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><button id="mode-toggle">🌙</button></li>
       </ul>
     </nav>
   </header>
-
-  <section id="home" class="hero">
-    <h2>Hello, I'm Manish</h2>
-    <p>Crafting clean and simple web pages with HTML</p>
-    <a href="#projects" class="btn">View My Work</a>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm Manish, an aspiring front-end web developer passionate about creating clean, responsive, and user-friendly websites. I specialize in writing well-structured HTML and enjoy learning modern web technologies to improve my skills.</p>
-    <h3>Skills:</h3>
-    <ul>
-      <li>HTML</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Personal Resume Website</h3>
-      <p>A clean HTML resume layout showing my skills, experience, and contact info.</p>
-      <a href="#">Live Demo</a> | <a href="#">GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Product Landing Page</h3>
-      <p>A one-page product layout with sections like features, testimonials, and contact.</p>
-      <a href="#">Live Demo</a> | <a href="#">GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Portfolio Website (This one!)</h3>
-      <p>My personal portfolio built with HTML, CSS, and basic JavaScript animations.</p>
-      <a href="#">Live Demo</a> | <a href="#">GitHub</a>
-    </div>
-
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to connect with me via the links below.</p>
-    <ul>
-      <li><a href="#">LinkedIn</a></li>
-      <li><a href="#">GitHub</a></li>
-    </ul>
-  </section>
-
+  <main>
+    <section id="hero" class="section">
+      <h1>Hi, I'm Manish 👋</h1>
+      <p>I'm a Web Developer passionate about building clean and responsive websites.</p>
+    </section>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am a self-taught web developer with a strong foundation in HTML, CSS, and JavaScript. I enjoy creating interactive, user-friendly web experiences.</p>
+    </section>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A personal website showcasing my projects and skills.</p>
+        </div>
+        <div class="project-card">
+          <h3>To-Do App</h3>
+          <p>A JavaScript-based to-do list app to manage daily tasks.</p>
+        </div>
+        <div class="project-card">
+          <h3>Weather App</h3>
+          <p>Simple weather fetching app using OpenWeatherMap API.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>📱 WhatsApp: <a href="https://wa.me/919876543210" target="_blank">Chat Now</a></p>
+    </section>
+  </main>
   <footer>
-    <p>&copy; 2025 Manish. All rights reserved.</p>
+    <p>© 2025 Manish Kumar</p>
+    <div class="social-icons">
+      <a href="https://github.com/MANISH009-KUMAR" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/manish-kumar" target="_blank">LinkedIn</a>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
