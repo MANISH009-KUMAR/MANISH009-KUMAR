@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +12,30 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    .typed-cursor {
+      font-size: 1.5rem;
+      color: #666;
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+    .project-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </head>
+
 <body>
   <header data-aos="fade-down">
     <nav class="navbar">
@@ -23,15 +48,18 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <section id="hero" class="section" data-aos="fade-up">
       <h1>Hi, I'm <span id="typed"></span></h1>
       <p>I'm a Web Developer passionate about building clean and responsive websites.</p>
     </section>
+
     <section id="about" class="section" data-aos="fade-right">
       <h2>About Me</h2>
       <p>I am a self-taught web developer with a strong foundation in HTML, CSS, and JavaScript. I enjoy creating interactive, user-friendly web experiences.</p>
     </section>
+
     <section id="projects" class="section" data-aos="fade-left">
       <h2>Projects</h2>
       <div class="project-grid">
@@ -52,12 +80,14 @@
         </div>
       </div>
     </section>
+
     <section id="contact" class="section" data-aos="zoom-in">
       <h2>Contact Me</h2>
       <p>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
       <p>📱 WhatsApp: <a href="https://wa.me/919876543210" target="_blank">Chat Now</a></p>
     </section>
   </main>
+
   <footer data-aos="fade-up">
     <p>© 2025 Manish Kumar</p>
     <div class="social-icons">
@@ -66,6 +96,7 @@
       <a href="https://instagram.com/its_manish_jajoriya_444" target="_blank">Instagram</a>
     </div>
   </footer>
+
   <script>
     AOS.init();
     new Typed('#typed', {
@@ -76,4 +107,5 @@
     });
   </script>
 </body>
+
 </html>
